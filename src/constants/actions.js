@@ -1,0 +1,11 @@
+export const LOGIN_REQUEST = "LOGIN_REQUEST";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAILURE = "LOGIN_FAILURE";
+export const LOGOUT = "LOGOUT";
+export const LOADED = "LOADED";
+export const SAVE_USER = "SAVE_USER";
+export const ADD_RECORD = "ADD_RECORD";
+export const ADD_RECORD_SUCCESS = "ADD_RECORD_SUCCESS";
+export const GET_RECORD_REQUEST = "GET_RECORD_REQUEST";
+export const GET_RECORD_SUCCESS = "GET_RECORD_SUCCESS";
+export const UPDATE_RECORD = "UPDATE_RECORD";
