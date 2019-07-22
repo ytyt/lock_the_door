@@ -1,16 +1,17 @@
-import React from "react";
-import formatDate from "date-fns/format";
+import React from 'react'
+import formatDate from 'date-fns/format'
+import RecordListLabel from './RecordListLabel'
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from '@emotion/core'
 
-const RecordList = ({ date }) => {
+const RecordList = ({ date, showDate }) => {
+  const timestamp = date.seconds ? date.seconds * 1000 : date.createdAt
   return (
     <div>
-      {date.seconds
-        ? formatDate(date.seconds * 1000, "h:mm")
-        : formatDate(date.createdAt, "h:mm")}
+      {showDate ? <RecordListLabel timestamp={timestamp} /> : ''}
+      {formatDate(timestamp, 'h:mm')}
     </div>
-  );
-};
+  )
+}
 
-export default RecordList;
+export default RecordList

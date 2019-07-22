@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { Router, Route, Switch } from "react-router-dom";
-import MainContainer from "../containers/MainContainer";
-import AuthContainer from "../containers/AuthContainer";
-import PrivateRoute from "./PrivateRoute";
+import React, { Component } from 'react'
+import { Router, Route, Switch } from 'react-router-dom'
+import MainContainer from '../containers/MainContainer'
+import AuthContainer from '../containers/AuthContainer'
+import PrivateRoute from './PrivateRoute'
 /** @jsx jsx */
-import { jsx, css, Global } from "@emotion/core";
-import { history } from "../store/configureStore";
-import { colors } from "../themes";
+import { jsx, css, Global } from '@emotion/core'
+import { history } from '../store/configureStore'
+import { colors } from '../themes'
 
 export default class App extends Component {
   render() {
@@ -29,7 +29,7 @@ export default class App extends Component {
         <Global
           styles={{
             html: {
-              fontSize: "14px"
+              fontSize: '14px'
             },
             body: {
               margin: 0,
@@ -38,7 +38,7 @@ export default class App extends Component {
           }}
         />
       </React.Fragment>
-    );
+    )
   }
 }
 
@@ -50,4 +50,4 @@ const style = css`
     ${colors.main} 0%,
     ${colors.mainLight} 100%
   );
-`;
+`
